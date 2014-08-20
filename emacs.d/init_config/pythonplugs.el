@@ -1,5 +1,5 @@
 (add-to-list 'load-path "~/.emacs.d/plugins/rope")
-(add-to-list 'load-path "~/.emacs.d/plugins/Pymacsv025")
+(add-to-list 'load-path "~/.emacs.d/plugins/Pymacs")
 (add-to-list 'load-path "~/.emacs.d/plugins/ropemacs-0.7")
 (add-to-list 'load-path "~/.emacs.d/init_config")
 

@@ -4,3 +4,9 @@
 [submodule "emacs.d/plugins/evil"]
 	path = emacs.d/plugins/evil
 	url = git://gitorious.org/evil/evil.git
+[submodule "emacs.d/plugins/rope"]
+	path = emacs.d/plugins/rope
+	url = https://github.com/python-rope/rope.git
+[submodule "emacs.d/plugins/Pymacs"]
+	path = emacs.d/plugins/Pymacs
+	url = https://github.com/pinard/Pymacs.git
