@@ -11,5 +11,7 @@
 (load "evil.el")
 (load "markdown.el")
 (load "pythonplugs.el")
-
+(load "tabbar.el")
+(load "highlight80.el")
+(load "rainbow.el")
 
