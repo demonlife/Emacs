@@ -1,0 +1,6 @@
+[submodule "emacs.d/plugins/markdown-mode"]
+	path = emacs.d/plugins/markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git
+[submodule "emacs.d/plugins/evil"]
+	path = emacs.d/plugins/evil
+	url = git://gitorious.org/evil/evil.git
