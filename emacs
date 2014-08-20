@@ -15,3 +15,13 @@
 (load "highlight80.el")
 (load "rainbow.el")
 
+;; 每次安装需要修改的地方
+(add-to-list 'load-path "/home/demon/.emacs.d/auto-complete-make")
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "/home/demon/.emacs.d/auto-complete-make/ac-dict")
+(ac-config-default)
+
+(add-to-list 'load-path "~/.emacs.d/yasnippet")
+(require 'yasnippet)
+(yas-global-mode 1)
+;;

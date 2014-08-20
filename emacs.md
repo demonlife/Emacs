@@ -180,6 +180,30 @@ evil下载地址: git clone git://gitorious.org/evil/evil.git
 ## emacs 插件安装 ##
 [参考资料](http://docs.huihoo.com/homepage/shredderyin/emacs_elisp.html)
 
+### autocomplete 安装 ##
+[autocomplete地址](http://cx4a.org/software/auto-complete/index.html)
+
+* 安装方法
+
+> 下载autocomplete, 使用命令make install DIR=$HOME/.emacs.d/xxpath
+
+> 将命令的输出添加到eamcs配置文件中即可
+
+### yasnippet 安装 ###
+[yasnippet主页](https://github.com/capitaomorte/yasnippet)
+
+* 安装方法
+
+> cd $HOME/.emacs.d
+
+> git clone --recursive https://github.com/capitaomorte/yasnippet
+
+>  (add-to-list 'load-path "~/.emacs.d/yasnippet")
+
+>  (require 'yasnippet)
+
+>  (yas-global-mode 1)
+
 ## emacs ido模式使用 ##
 * C-s, C-r, 左右键在匹配的文件之间来回旋转
 
@@ -251,3 +275,8 @@ evil下载地址: git clone git://gitorious.org/evil/evil.git
 * 标题下加====等价与h1
 
 * 标题下加----等价与h2
+
+# Emacs 参考资料 #
+* [资料1](http://mad4a.me/2012/07/31/emacs-summary/)
+
+* [资料2](http://mad4a.me/2012/08/02/emacs-summary-cont/)
