@@ -204,6 +204,72 @@ evil下载地址: git clone git://gitorious.org/evil/evil.git
 
 >  (yas-global-mode 1)
 
+## 安装cedet, ecb ##
+* [cedet下载地址](http://cedet.sourceforge.net/)=>release1.1
+
+* 编译 make EMACS=emacs
+
+* .emacs配置文件添加如下内容:
+
+>(load-file "xx/cedet-1.1/common/cedet.el")
+
+>(global-ede-mode 1)
+
+>(semantic-load-enable-code-helpers)
+
+>(global-srecode-minor-mode 1)
+
+* 安装ecb, [ecb下载地址](http://ecb.sourceforge.net/)
+
+> 在.emacs中添加如下内容
+
+>(add-to-list 'load-path "xx/ecb-2.40")
+
+>(require 'ecb)
+
+>(require 'ecb-autoloads)
+
+* 在 emacs的tool->start code browser启动ECB
+
+### ecb 错误解决 ###
+1. if symbol's value as variable is void stack-trace-on-error
+
+>(setq stack-trace-on-error t)
+
+2. 如果打开emacs后弹出提示ecb-tip-of-the day的弹框
+
+>(setq ecb-tip-of-the-day nil)
+
+3. CB can only be used with [1.0pre6, 1.0.9]! Please install it and restart Emacs!
+进入到ecb目录下, 打开文件ecb-upgrade.el, 将ecb-check-requirements函数中的
+如下代码注释:
+
+>;; check if vedet-version is correct
+
+>      when (or (not (boundp 'cedet-version))
+
+>        (ecb-package-version-list< 
+
+>        (ecb-package-version-str2list cedet-version)
+
+>        ecb-required-cedet-version-min)
+
+>        (ecb-package-version-list<
+
+>        ecb-required-cedet-version-max
+
+>        (ecb-package-version-str2list cedet-version)))
+
+>        (setq version-error (concat "cedet [" 
+
+>        cedet-required-version-str-min
+
+>        ", " 
+
+>        cedet-required-version-str-max
+
+>        "]")))
+
 ## emacs ido模式使用 ##
 * C-s, C-r, 左右键在匹配的文件之间来回旋转
 
