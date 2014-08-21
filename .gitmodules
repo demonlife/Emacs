@@ -10,3 +10,6 @@
 [submodule "emacs.d/plugins/Pymacs"]
 	path = emacs.d/plugins/Pymacs
 	url = https://github.com/pinard/Pymacs.git
+[submodule "emacs.d/plugins/keyfreq"]
+	path = emacs.d/plugins/keyfreq
+	url = https://github.com/dacap/keyfreq.git
