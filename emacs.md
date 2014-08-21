@@ -118,7 +118,8 @@ evil下载地址: git clone git://gitorious.org/evil/evil.git
 
 7.以上的所以操作都可以在python的虚拟环境中进行安装。
 
-8.检查python语法错误
+8.使用flymake检查python语法错误
+* [flymake主页](http://www.emacswiki.org/FlyMake)
 
 > 安装方法如下：
 
@@ -149,6 +150,8 @@ evil下载地址: git clone git://gitorious.org/evil/evil.git
 >> (add-hook 'python-mode-hook 'flymake-python-pyflakes-load)
 
 >> 如果提示无法加载flymake-python-pyflakes文件，则添加load-path
+
+* [flymake检测C/C++的设置](http://emacser.com/flymake.htm/comment-page-2)
 
 ## Emacs markdown ##
 * pandoc 的安装

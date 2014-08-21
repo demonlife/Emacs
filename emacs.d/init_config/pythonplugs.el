@@ -21,6 +21,11 @@
 (require 'flymake-python-pyflakes)
 (add-hook 'python-mode-hook 'flymake-python-pyflakes-load)
 
+; 加载出错时，不显示错误提示信息
+(setq flymake-gui-warnings-enabled nil)
+; 记录错误日志
+(setq flymake-log-level 0)
+
 ; 显示python的语法错误信息
 (when (load "flymake" ) 
   (defun flymake-pyflakes-init () 
