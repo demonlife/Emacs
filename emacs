@@ -16,6 +16,7 @@
 (load "rainbow.el")
 (load "ceditecb.el")
 (load "funnysetting.el")
+(load "nasmsetting.el")
 
 ;; 每次安装需要修改的地方
 (add-to-list 'load-path "/home/demon/.emacs.d/auto-complete-make")
